@@ -1,0 +1,111 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header and navigation styles */
+.main-header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Dark background for navbar */
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.nav-list a:hover {
+    background-color: #850d0d; /* Darker background on hover */
+}
+
+/* Title styles */
+#title {
+    font-size: 2.5em;
+    margin: 20px 0 0 0;
+}
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+    border: 2px solid #4CAF50; /* Green border */
+    margin: 20px;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 7px; /* Rounded corners */
+    flex: 1; /* Allow it to grow */
+    max-width: 800px; /* Limit max width */
+}
+
+/* Description paragraph styles */
+.description {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Image styles */
+.styled-image {
+    max-width: 100%; /* Responsive */
+    height: auto;
+    border: 1px solid #4CAF50; /* Green border */
+    margin-top: 15px;
+}
+
+/* Footer styles */
+.main-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* Dark background */
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack nav items */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stack list items */
+    }
+
+    .nav-list li {
+        margin: 5px 0; /* Vertical margin */
+    }
+}
+
+@media (max-width: 480px) {
+    #title {
+        font-size: 2em; /* Smaller title on small screens */
+    }
+
+    .description {
+        font-size: 1em; /* Smaller text on small screens */
+    }
+}
